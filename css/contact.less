@@ -1,0 +1,152 @@
+/*header*/
+
+.header-contact {
+    height: 500px;
+    margin-bottom: 150px;
+    padding-top: 265px;
+    background: url(../img/Contact/contact.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
+.header-contact__text {
+    text-align: center;
+}
+
+
+/* contact section */
+
+.contact {
+    height: 840px;
+    margin-bottom: 90px;
+    >.inner {
+        display: flex;
+    }
+}
+
+.contact__left {
+    max-width: 570px;
+    margin-right: 15px;
+    .social-media {
+        padding-top: 15px;
+        text-align: left
+    }
+}
+
+//contact form
+.contact-date__form {
+    display: flex;
+    flex-wrap: wrap;
+    height: 440px;
+    input,
+    textarea {
+        padding-left: 20px;
+    }
+    textarea {
+        padding-top: 20px;
+        resize: none;
+    }
+}
+
+.form-name,
+.form-email {
+    width: 263px;
+    height: 48px;
+}
+
+.form-name {
+    margin-right: 30px;
+}
+
+.form-object {
+    width: 556px;
+    height: 48px;
+}
+
+.form-message {
+    width: 556px;
+    height: 200px;
+}
+
+//The end
+.contact__info {
+    height: 400px;
+    padding-top: 100px;
+}
+
+.contact__info-title {
+    font: 700 18px/48px 'Montserrat';
+}
+
+.contact__info-text {
+    padding-right: 1px;
+    font: 400 14px/30px 'Open Sans';
+}
+
+.contact__info__address {
+    li {
+        list-style-type: none;
+        font: normal 400 14px/30px 'Open Sans';
+    }
+    a:link {
+        text-decoration: none;
+    }
+}
+
+.contact__right {
+    width: 555px;
+    height: 843px;
+}
+.btn-box{
+    width: 100%;
+}
+
+/* RWD */
+
+@media (max-width: 1020px) {
+    .header-contact {
+        height: 400px;
+        margin-bottom: 100px;
+        padding-top: 150px;
+    }
+    .contact {
+        height: auto;
+        >.inner {
+            display: block;
+        }
+    }
+    .contact__left {
+        margin: 0 auto;
+        .social-media{
+            text-align: center;
+        }
+    }
+    .contact__right {
+        max-width: 600px;
+        height: 250px;
+        margin: 50px auto 0;
+    }
+    .contact__info {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+//mobile
+
+
+@media (min-width: 0px) and (max-width: 600px){
+    .contact-date__form input, .contact-date__form textarea{
+        width: 100%;
+    }
+    .contact-date__form{
+        .btn{
+            width: 100%;
+        }
+    }
+    .form-name{
+        margin-right: 0;
+    }
+    .contact__right{
+        margin: 25px auto 0;
+    }
+}

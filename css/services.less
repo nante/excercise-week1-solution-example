@@ -1,0 +1,255 @@
+/*header*/
+
+.header-services {
+    height: 500px;
+    margin-bottom: 150px;
+    padding-top: 265px;
+    background: url(../img/Contact/contact.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
+.header-services__text {
+    text-align: center;
+}
+
+
+/*services section*/
+
+.services__top,
+.pricing__top {
+    width: 750px;
+    height: 90px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.services__top-title,
+.pricing__top-title {
+    position: relative;
+    &:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: 67px;
+        height: 22px;
+        background: #7beec7;
+        bottom: 3px;
+    }
+}
+
+//bottom part of services
+.services__bottom {
+    display: flex;
+    margin-bottom: 151px;
+    height: 365px;
+}
+
+.services__bottom__content {
+    margin-right: 30px;
+}
+
+.services__bottom__content-text {
+    font: 400 14px/30px 'Open Sans';
+    margin-bottom: 35px;
+}
+
+.services__listed1 {
+    margin-right: 96px;
+}
+
+.services__bottom__lists {
+    display: flex;
+}
+
+.services__listed-list,
+.pricing__bottom__services-list {
+    list-style-type: none;
+    font: 400 14px/30px 'Open Sans';
+    &:before {
+        content: '\e80a';
+        padding-right: 10px;
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        color: #bdf7e3;
+    }
+}
+
+.features {
+    height: 210px;
+    margin-bottom: 149px;
+    >.inner {
+        padding: 0;
+    }
+}
+
+.features__content {
+    display: flex;
+}
+
+.features__content-list {
+    position: relative;
+    margin: 0 15px;
+    list-style-type: none;
+    text-align: center;
+    i {
+        font-size: 34.3px;
+    }
+    &:before {
+        position: absolute;
+        top: 28px;
+        z-index: -1;
+        content: '';
+        width: 52px;
+        height: 22px;
+        background: #7beec7;
+    }
+}
+
+.features__content-title {
+    padding-top: 30px;
+    font: 700 18px/30px 'Montserrat';
+}
+
+.features__content-text {
+    font: 400 14px/30px 'Open Sans';
+}
+
+
+/*pricing section*/
+
+.pricing {
+    >.inner {
+        padding: 0;
+    }
+}
+
+.pricing__bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing__bottom-list {
+    width: 360px;
+    height: 490px;
+    margin-bottom: 150px;
+    padding: 30px 0 40px 30px;
+    list-style-type: none;
+    border-top: 5px solid #7beec7;
+    background: linear-gradient(to bottom left, #7beec7 2%, white 1%);
+    &:hover {
+        box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
+    }
+    .link {
+        width: 135px;
+        margin-top: 30px;
+    }
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 30px;
+    margin-bottom: 30px;
+    background: #7beec7;
+    p {
+        font: 700 14px/48px 'Montserrat';
+        color: #ffffff;
+    }
+}
+
+.pricing__bottom__services-list {
+    line-height: 36px;
+}
+
+
+/* RWD */
+
+@media (min-width: 700px) and (max-width: 1020px) {
+    .header-services {
+        height: 400px;
+        margin-bottom: 100px;
+        padding-top: 150px;
+    }
+    .services__top,
+    .pricing__top {
+        max-width: 650px;
+        height: auto;
+        margin: 0 auto 50px;
+    }
+    .services__bottom {
+        display: block;
+        height: auto;
+        margin-bottom: 100px;
+        figure {
+            text-align: center;
+        }
+    }
+    .services__bottom__content-text {
+        max-width: 720px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .services__bottom__lists {
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .services__listed1 {
+        width: 30%;
+        margin-right: 0;
+    }
+    .services__listed2 {
+        width: 30%;
+    }
+}
+
+//mobile
+@media (max-width: 699px) {
+    .features__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services__top,.pricing__top {
+        width: auto;
+        margin: 0 auto 30px;
+    }
+    .pricing__bottom {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .services__bottom {
+        height: auto;
+        figure {
+            display: none;
+        }
+    }
+    .services__bottom {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .services__bottom__content {
+        margin-right: 0;
+    }
+    .services__listed1,
+    .services__listed2 {
+        width: 50%;
+        margin: 0;
+    }
+    .services__bottom__lists {
+        justify-content: space-around;
+    }
+    .features {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .features__content {
+        flex-wrap: wrap;
+    }
+    .pricing__bottom-list{
+        margin-bottom: 15px;
+    }
+}

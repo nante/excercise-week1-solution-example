@@ -1,0 +1,46 @@
+[
+	{
+		"src": "img/homepage/desk.jpg",
+		"tags": ["webdesign", "fashion"]
+	},
+	
+	{
+		"src": "img/homepage/list2.jpg",
+		"tags": ["graphic-design", "fashion"]
+	},
+	
+	{
+		"src": "img/homepage/list3.jpg",
+		"tags": ["logo-design", "advertisment"]
+	},
+	
+	{
+		"src": "img/homepage/list4.jpg",
+		"tags": ["webdesign", "fashion"]
+	},
+	
+	{
+		"src": "img/homepage/list5.jpg",
+		"tags": ["logo-design", "advertisment"]
+	},
+	
+	{
+		"src": "img/homepage/list6.jpg",
+		"tags": ["webdesign", "advertisment"]
+	},
+	
+	{
+		"src": "img/homepage/list7.jpg",
+		"tags": ["logo-design", "advertisment"]
+	},
+	
+	{
+		"src": "img/homepage/list8.jpg",
+		"tags": ["logo-design", "fashion"]
+	},
+	
+	{
+		"src": "img/homepage/list9.jpg",
+		"tags": ["webdesign", "fashion"]
+	}
+]
